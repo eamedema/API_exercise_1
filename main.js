@@ -9,8 +9,10 @@ $(()=> {
       title = (data.data.children[i].data.title);
       img = (data.data.children[i].data.thumbnail);
 
-      $('body').append(`<img src="${img}"></img><br><div>Title: ${title}</div>`);
+      $('body').append(`<img src="${img}"></img><br><div>Title: ${title}</div><br>`);
+      return i < 10;
     });
+
     //     let title = (data.title);
     //     let language = (data.language);
     //     let length = (data.posts.length);
