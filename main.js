@@ -1,15 +1,25 @@
 $(()=> {
 
   $.get('https://www.reddit.com/r/aww/.json', (data) => {
-    console.log(data);
-    let title;
-    let img;
+    // console.log(data);
+    let title,
+        img,
+        link,
+        number;
+
     $.each(data.data.children, (i)=> {
       // console.log(data.data.children[i].data.title);
       title = (data.data.children[i].data.title);
       img = (data.data.children[i].data.thumbnail);
+      link = (data.data.children[i].data.url);
+      number = [i];
 
-      $('body').append(`<img src="${img}"></img><br><div>Title: ${title}</div><br>`);
+      console.log(link);
+
+      $('.container').append(`<div class="${number} item"></div>`)
+      $(`.${number}`).append(`<img src="${img}"></img>`);
+      $(`.${number}`).append(`<p>${title}</p>`);
+      $(`.${number}`).append(`<a class="button" href="${link}">LINK</a>`);
       return i < 10;
     });
 
