@@ -21,6 +21,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  scroll: no;
 }
 
 .titles{
@@ -49,6 +50,12 @@ a{
   background-image: linear-gradient(to bottom right, #ef17fd, #fdcf17);
   color: white;
   margin-bottom: 100px;
+  transition: 1s;
+}
+.buttons:hover {
+  background-image: linear-gradient(to bottom right, #fdcf17, #ef17fd);
+  width: 55%;
+  transition: 1s;
 }
 
 .banner {
@@ -76,7 +83,7 @@ a{
   }
 
   50% {
-    transform: translate(-35px, 0);
+    transform: translate(0, -35px);
   }
 
   100% {

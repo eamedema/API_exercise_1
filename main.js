@@ -20,7 +20,7 @@ $(()=> {
       $(`.${number}`).append(`<img src="${img}"></img>`);
       $(`.${number}`).append(`<p class="titles">${title}</p>`);
       $(`.${number}`).append(`<a class="buttons" href="${link}">CHECK IT OUT</a>`);
-      $(`.${number}`).append(`<img class="${number}" src="down.png"></img>`);
+      $(`.${number}`).append(`<img class="${number} float" src="down.png"></img>`);
       return i < 10;
     });
 
