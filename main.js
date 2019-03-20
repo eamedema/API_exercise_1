@@ -18,10 +18,63 @@ $(()=> {
 
       $('.container').append(`<div class="${number} item"></div>`)
       $(`.${number}`).append(`<img src="${img}"></img>`);
-      $(`.${number}`).append(`<p>${title}</p>`);
-      $(`.${number}`).append(`<a class="button" href="${link}">LINK</a>`);
+      $(`.${number}`).append(`<p class="titles">${title}</p>`);
+      $(`.${number}`).append(`<a class="buttons" href="${link}">CHECK IT OUT</a>`);
+      $(`.${number}`).append(`<img class="${number}" src="down.png"></img>`);
       return i < 10;
     });
+
+    $('img.0').click(function() {
+      $('html, body').animate({
+        scrollTop: $("div.1").offset().top
+      }, 1000)
+    });
+    $('img.1').click(function() {
+      $('html, body').animate({
+        scrollTop: $("div.2").offset().top
+      }, 1000)
+    });
+    $('img.2').click(function (){
+      $('html, body').animate({
+        scrollTop: $("div.3").offset().top
+      }, 1000)
+    });
+    $('img.3').click(function (){
+      $('html, body').animate({
+        scrollTop: $("div.4").offset().top
+      }, 1000)
+    });
+    $('img.4').click(function (){
+      $('html, body').animate({
+        scrollTop: $("div.5").offset().top
+      }, 1000)
+    });
+    $('img.5').click(function (){
+      $('html, body').animate({
+        scrollTop: $("div.6").offset().top
+      }, 1000)
+    });
+    $('img.6').click(function (){
+      $('html, body').animate({
+        scrollTop: $("div.7").offset().top
+      }, 1000)
+    });
+    $('img.7').click(function (){
+      $('html, body').animate({
+        scrollTop: $("div.8").offset().top
+      }, 1000)
+    });
+    $('img.8').click(function (){
+      $('html, body').animate({
+        scrollTop: $("div.9").offset().top
+      }, 1000)
+    });
+    $('img.9').click(function (){
+      $('html, body').animate({
+        scrollTop: $("div.0").offset().top
+      }, 1000)
+    });
+
 
     //     let title = (data.title);
     //     let language = (data.language);
